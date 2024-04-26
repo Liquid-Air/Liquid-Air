@@ -38,6 +38,10 @@
     <link href="/webpage/static/runtime/runtime.gz.css" type="text/css" rel="stylesheet">
   
 	<style>
+	body 
+	{
+		background-color: lightblue;
+	}
 		html, body {
     			max-width: 100%;
     			overflow-x: hidden;
@@ -1429,7 +1433,8 @@ underline;
 }
 
 .publication-viewer.touch-disabled .wiper-theme .section.author-section .appreciate-button:hover {
-  color: rgba(61,52,58,1);
+  color: lightblue;
+  background-color: lightblue;
   border-color: rgba(61,52,58,1);
 }
 
@@ -1585,6 +1590,15 @@ underline;
         margin-left: 0;
         margin-right: 2rem;
       }
+	  nav button {
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer; /* indicates clickable element */
+  padding: 10px; /* adjust padding if needed */
+  margin-left: 600px;
+}
+
     </style>
     <noscript id="noscript-static-layout" data-href="/webpage/static/runtime/noscript.gz.css">
       <link href="/webpage/static/runtime/noscript.gz.css" type="text/css" rel="stylesheet">
@@ -1593,8 +1607,8 @@ underline;
     <!--END-BUMPER-STYLE-SHEET-->
 </head>
 <body class="">
-  <div id="app">
-    <div id="publication-viewer" class="publication-viewer">
+	<div id="homePage">
+		<div id="publication-viewer" class="publication-viewer">
       <div id="luca-splash" class="splash">
         <div class="background" style="background-image: url(/webpage/Qp9R01Gn42Jxk/resources/4de8cd55-dfa2-4f24-a379-b845082dc703?asset_id=4de8cd55-dfa2-4f24-a379-b845082dc703&image_assets=false&size=1024); background-position: 50% 50%;"></div>
         <div class="content">
@@ -1625,7 +1639,13 @@ underline;
                 <span class="subtitle">Water Generators and Sanitation for a More Equal World</span>
               </h1>
             </div>
-       <div id="hiddenAbout" class="hideAbout">
+		</div>
+	</div>
+	<nav style="background-color: green; display: flex; padding: 20px;">
+	<button onclick="hideAbout()">Home</button>
+  <button onclick="showAbout()">About</button>
+</nav>
+	 <div id="hiddenAbout" class="hideAbout">
         <div class="content-container">
                             <p class=" " >Nina Mankouski</p>
                                   <p class=" " >Norah Bagley</p>
@@ -1634,12 +1654,36 @@ underline;
                                   <p class=" " >Churchill Junior High, 8th Grade</p>
                     </div>
     </div>
+  <div id="app">
+    <div id="publication-viewer" class="publication-viewer">
+      <div id="luca-splash" class="splash">
+        <div class="background" style="background-image: url(/webpage/Qp9R01Gn42Jxk/resources/4de8cd55-dfa2-4f24-a379-b845082dc703?asset_id=4de8cd55-dfa2-4f24-a379-b845082dc703&image_assets=false&size=1024); background-position: 50% 50%;"></div>
+        <div class="content">
+          <div class="logo"></div>
+          <div class="loading-label"></div>
+          <div class="wp-progress-bar">
+            <div class="wp-progress-bar-clip">
+              <div class="wp-progress-bar-view"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="publication-view">
+        <div class="wp-swipe-panel-group">
+          <div class="wp-swipe-panel-group-view">
+              <div class="wp-swipe-panel-group-panel article-panel">
+                <div class="article wiper-theme sections-article-layout" data-article-type="sections-article">
+        <div class="section title-section title-center"  data-section-behavior="wiper-title"  data-layer="1" data-layer-name="over" data-scroll-after-animation="false">
+        <div class="section-view">
+          <div class="section-background ">
+            <div class="section-background-image"  style="background-position: 50% 50%;"><a class="background-image-placeholder-link" href="/webpage/Qp9R01Gn42Jxk/resources/4de8cd55-dfa2-4f24-a379-b845082dc703?asset_id=4de8cd55-dfa2-4f24-a379-b845082dc703&image_assets=false&size=1024" data-image-width="3456" data-image-height="5184"></a></div>
+          </div>
           <div class="navigation-hint down"></div>
         </div>
       </div>
-      <div class="section spacer-section content-spacer" data-section-behavior="wiper-spacer" data-layer-name="over">
+      <div id="home" class="section spacer-section content-spacer" data-section-behavior="wiper-spacer" data-layer-name="over">
       </div>
-      <div class="section single-column-section split-layout image-on-right" data-section-behavior="wiper-split-layout" data-layer="0" data-layer-name="over">
+      <div id="home" class="section single-column-section split-layout image-on-right" data-section-behavior="wiper-split-layout" data-layer="0" data-layer-name="over">
         <div class="section-view">
               <div class="section-background">
                 <div class="section-background-image" style="background-position: 66.5625% 44.58672875436554%;"><a class="background-image-placeholder-link" href="/webpage/Qp9R01Gn42Jxk/resources/edce0567-c37d-489f-aaab-db8ff76a0ac5-group_photo_?asset_id=55f984a6-0335-4bcb-a5b1-29cda78e2f44&amp;img_etag=%22d25d5078-c08e-4a26-ac45-09da18829ef2%22&amp;image_assets=false&amp;size=1024" data-image-width="1500" data-image-height="2100"></a></div>
@@ -1651,9 +1695,9 @@ underline;
           </div>
         </div>
       </div>
-      <div class="section spacer-section content-spacer" data-section-behavior="wiper-spacer" data-layer-name="over">
+      <div id="home"  class="section spacer-section content-spacer" data-section-behavior="wiper-spacer" data-layer-name="over">
       </div>
-      <div class="section single-column-section split-layout image-on-left" data-section-behavior="wiper-split-layout" data-layer="0" data-layer-name="over">
+      <div id="home" class="section single-column-section split-layout image-on-left" data-section-behavior="wiper-split-layout" data-layer="0" data-layer-name="over">
         <div class="section-view">
               <div class="section-background">
                 <div class="section-background-image" style="background-position: 50% 50%;"><a class="background-image-placeholder-link" href="/webpage/Qp9R01Gn42Jxk/resources/32f442dc-fa72-4a5f-8806-99d6510f4e0a?asset_id=32f442dc-fa72-4a5f-8806-99d6510f4e0a&amp;image_assets=false&amp;size=1024" data-image-width="3744" data-image-height="5616"></a></div>
@@ -1667,7 +1711,7 @@ underline;
           </div>
         </div>
       </div>
-      <div class="section single-column-section  large-content-spacing-top large-content-spacing-bottom bottom-shadow" data-section-behavior="wiper-single-column" data-layer="0" data-layer-name="over">
+      <div id="home" class="section single-column-section  large-content-spacing-top large-content-spacing-bottom bottom-shadow" data-section-behavior="wiper-single-column" data-layer="0" data-layer-name="over">
         <div class="section-view">
           <div class="section-content">
             <div class="section-content-view">
@@ -1684,7 +1728,7 @@ underline;
         </div>
 
       </div>
-      <div class="section card-flipbook-section" data-section-behavior="wiper-column-overlay" data-spacing=".75" data-layer="-1" data-layer-name="under">
+      <div id="home" class="section card-flipbook-section" data-section-behavior="wiper-column-overlay" data-spacing=".75" data-layer="-1" data-layer-name="under">
         <div class="section-view">
           <div class="section-background">
             <div class="section-background-image" style=" background-position: 50% 50%;" data-pan-and-zoom="zoom-in"><a class="background-image-placeholder-link" href="/webpage/Qp9R01Gn42Jxk/resources/143de761-be72-4498-8ca9-30fa901c5fda?asset_id=143de761-be72-4498-8ca9-30fa901c5fda&image_assets=false&size=1024" data-image-width="2931" data-image-height="4397"></a></div>
@@ -1853,6 +1897,21 @@ underline;
     <script type="text/javascript">
       window.useNewBumper = true;
       window.hzGneissHostname = 'hz-gneiss.adobe.io';
+	  
+	  function hideAbout()
+	  {
+		document.getElementById("hiddenAbout").classList.remove("showAbout");
+		document.getElementById("hiddenAbout").classList.add("hideAbout");
+		document.getElementById("app").classList.remove("hideAbout");
+		document.getElementById("app").classList.add("showAbout");
+	  }
+	  function showAbout()
+	  {
+		document.getElementById("hiddenAbout").classList.remove("hideAbout");
+		document.getElementById("hiddenAbout").classList.add("showAbout");
+		document.getElementById("app").classList.remove("showAbout");
+		document.getElementById("app").classList.add("hideAbout");
+	  }
     </script>
 
     <script type="text/javascript" src="/webpage/static/runtime/runtime-prod.gz.js" charset="utf-8"></script>
